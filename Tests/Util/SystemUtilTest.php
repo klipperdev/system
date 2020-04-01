@@ -75,7 +75,6 @@ final class SystemUtilTest extends TestCase
     /**
      * @dataProvider getConvertToBytesData
      *
-     * @param int        $expected
      * @param int|string $value
      */
     public function testConvertToBytes(int $expected, $value): void
@@ -96,8 +95,6 @@ final class SystemUtilTest extends TestCase
 
     /**
      * @dataProvider getInvalidHumanRepresentationData
-     *
-     * @param string $value
      */
     public function testInvalidHumanRepresentation(string $value): void
     {
@@ -120,8 +117,6 @@ final class SystemUtilTest extends TestCase
 
     /**
      * @dataProvider getInvalidUnitData
-     *
-     * @param string $value
      */
     public function testInvalidUnit(string $value): void
     {

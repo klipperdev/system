@@ -29,8 +29,6 @@ abstract class SystemUtil
      * Convert the human representation of size to bytes.
      *
      * @param string $from The value
-     *
-     * @return int
      */
     public static function convertToBytes(string $from): int
     {
@@ -71,8 +69,6 @@ abstract class SystemUtil
 
     /**
      * Get the memory limit in byte.
-     *
-     * @return int
      */
     public static function getMemoryLimit(): int
     {
@@ -85,8 +81,6 @@ abstract class SystemUtil
 
     /**
      * Get the memory usage in byte.
-     *
-     * @return int
      */
     public static function getMemoryUsage(): int
     {
@@ -95,8 +89,6 @@ abstract class SystemUtil
 
     /**
      * Check if the script is out of memory limit.
-     *
-     * @return bool
      */
     public static function isOutOfMemoryLimit(): bool
     {
