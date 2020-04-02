@@ -9,6 +9,9 @@
             "email": "francois.pluchino@klipper.dev"
         }
     ],
+    "require": {
+        "php": "^7.4.0"
+    },
     "autoload": {
         "psr-4": { "Klipper\\Component\\System\\": "" },
         "exclude-from-classmap": [
