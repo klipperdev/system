@@ -20,10 +20,7 @@ use Klipper\Component\System\Exception\RuntimeException;
  */
 abstract class SystemUtil
 {
-    /**
-     * @var null|int
-     */
-    private static $memoryLimit;
+    private static ?int $memoryLimit = null;
 
     /**
      * Convert the human representation of size to bytes.
