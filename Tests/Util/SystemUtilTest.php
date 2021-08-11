@@ -121,7 +121,7 @@ final class SystemUtilTest extends TestCase
     public function testInvalidUnit(string $value): void
     {
         $this->expectException(RuntimeException::class);
-        $this->expectExceptionMessageRegExp('/The unit "([\w\d. ]+)" does not exist for "'.$value.'". Only available: B, KB, MB, GB, TB, PB/');
+        $this->expectExceptionMessageMatches('/The unit "([\w\d. ]+)" does not exist for "'.$value.'". Only available: B, KB, MB, GB, TB, PB/');
 
         SystemUtil::convertToBytes($value);
     }
