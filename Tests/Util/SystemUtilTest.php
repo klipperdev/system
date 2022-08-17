@@ -18,10 +18,6 @@ use PHPUnit\Framework\TestCase;
 /**
  * @author François Pluchino <francois.pluchino@klipper.dev>
  *
- * @group klipper
- * @group klipper-system
- * @group klipper-system-util
- *
  * @internal
  */
 final class SystemUtilTest extends TestCase
