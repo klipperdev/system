@@ -30,7 +30,7 @@ final class SystemUtilTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->previousMemoryLimit = ini_get('memory_limit');
+        $this->previousMemoryLimit = \ini_get('memory_limit');
         ini_set('memory_limit', '1G');
     }
 

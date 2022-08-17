@@ -70,7 +70,7 @@ abstract class SystemUtil
     public static function getMemoryLimit(): int
     {
         if (null === self::$memoryLimit) {
-            self::$memoryLimit = static::convertToBytes(trim(ini_get('memory_limit')));
+            self::$memoryLimit = static::convertToBytes(trim(\ini_get('memory_limit')));
         }
 
         return self::$memoryLimit;
